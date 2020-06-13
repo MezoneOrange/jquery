@@ -1,0 +1,15 @@
+.crossed {
+    text-decoration: line-through;
+    font-weight: lighter;
+    opacity: 0.5;
+}
+
+.fa-times-circle {
+    margin-left: 10px;
+    color: red;
+    cursor: pointer;
+}
+
+#tasks > div:not(:first-child) {
+    margin-top: 20px;
+}

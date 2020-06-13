@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Домашнее задание к уроку №14-JQery">
+    <meta name="author" content="Дмитрий Шелухин">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <title>JQery homework</title>
+</head>
+<body class="bg-light">
+
+    <!-- header -->
+    <div class="navbar navbar-light bg-info">
+        <h3 class="navbar-brand text-white">
+            Урок №14 - JQuery
+        </h3>
+    </div>
+
+    <!-- task block -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="jumbotron col-md-8 mt-5">
+                <h1>Список дел</h1>
+
+                <!-- form -->
+                <form action="" class="mt-4">
+                    <div class="form-group">
+                        <input type="text" name="task" id="task_field" placeholder="Задание" class="form-control form-control-lg border-2 border-secondary text-danger">
+                    </div>
+                    <div class="form-group text-center">
+                        <button type="button" name="add" id="add_btn" class="btn btn-outline-secondary btn-lg text-danger pl-4 pr-4 mt-2">Добавить</button>
+                        <button type="button" name="show" id="show_btn" class="btn btn-outline-secondary btn-lg text-danger pl-4 pr-4 mt-2">Отобразить</button>
+                    </div>
+                </form>
+
+                <!-- hidden fault alert -->
+                <div class="alert alert-secondary mt-4 p-4 text-danger font-weight-bold h4" hidden id="fault">
+                    Вы ввели меньше чем 4 символа
+                </div>
+
+                <!-- hidden success alert -->
+                <div class="alert alert-secondary mt-4 p-4 text-muted font-weight-bold h4" hidden id="success">
+                    Элемент был добавлен
+                </div>
+
+                <!-- Tasks block -->
+                <div class="mt-4 font-weight-bold p-4 h5" id="tasks">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/494c205457.js" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
